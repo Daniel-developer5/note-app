@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="img/logo.png"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <title>Note app</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="app-box">
+            <header>
+                <div>
+                    <i class="fas fa-sticky-note"></i>
+                    <span>Note List</span>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="search-input"/>
+                </div>
+            </header>
+            <div class="inner-box">
+                <div class="init-box open">
+                    <div class="empty-block">
+                        <p class="empty-list-text">Nothing Here...</p>
+                        <div class="btn-box">
+                            <button class="start-btn">+</button>
+                            <div class="label-box">
+                                <span></span>
+                                <label>Start writing</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fill-block close scroll">
+                        <ul class="note-list"></ul>
+                        <button class="start-btn">+</button>
+                    </div>
+                    <div class="alert-box">
+                        <div class="alert">
+                            <div class="warning"></div>
+                            <p>Are you sure want to delete this note?</p>
+                            <div class="btns">
+                                <button>ok</button>
+                                <button>cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="note-box">
+                    <div class="note scroll" contenteditable="plaintext-only" data-placeholder="Write here..."></div>
+                    <ul class="tools">
+                        <li title="Add a list element">
+                            <i class="fas fa-list"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-image"></i>
+                            <input type="file" class="file">
+                        </li>
+                        <li>
+                            <i class="fas fa-magic"></i>
+                        </li>
+                    </ul>
+                    <ul class="bg-list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
